@@ -16,7 +16,7 @@ export const Button = ({ children, className, appName, onClick }: ButtonProps) =
       style={{ backgroundColor : 'gray'}}
       onClick={onClick}
     >
-      '@repo/ui' {children}
+      {children}
     </button>
   );
 };
