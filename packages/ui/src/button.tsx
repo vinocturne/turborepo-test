@@ -13,7 +13,6 @@ export const Button = ({ children, className, appName, onClick }: ButtonProps) =
   return (
     <button
       className={className}
-      style={{ backgroundColor : 'gray'}}
       onClick={onClick}
     >
       {children}

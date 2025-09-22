@@ -1,5 +1,4 @@
 import {Suspense} from "react";
-import {createBrowserRouter} from "react-router-dom";
 import {Home} from "../pages/home/Home.tsx";
 import {Test} from "../pages/test/Test.tsx";
 
@@ -12,7 +11,7 @@ const LazyWrapper = ({children}: { children: React.ReactNode}) => {
     )
 }
 
-export const router = createBrowserRouter([
+export const routes = () => [
     {
         path: '/',
         element:
@@ -22,4 +21,4 @@ export const router = createBrowserRouter([
         path: '/test',
         element: <LazyWrapper><Test /></LazyWrapper>
     }
-])
+]
