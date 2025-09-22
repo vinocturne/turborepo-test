@@ -20,7 +20,7 @@ export default defineConfig({
         manualChunks: {
           // 벤더 라이브러리 분리
           vendor: ['react', 'react-dom'],
-          router: ['react-routes-dom'],
+          router: ['react-router-dom'],
           ui: ['@repo/ui'], // 공통 UI 패키지
         },
       },
