@@ -1,12 +1,10 @@
 import './App.css'
-import {Button} from "@repo/ui";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./routes/router.tsx";
 
 function App() {
   return (
-    <>
-        <div style={{ marginBottom: '20px'}}>web project</div>
-        <Button appName={'web'}>버튼</Button>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
