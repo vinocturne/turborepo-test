@@ -40,11 +40,11 @@ jobs:
 
       - name: Lint and type check
         run: |
-          npx turbo run lint --filter=anotherWeb
-          npx turbo run type-check --filter=anotherWeb
+          npx turbo run lint --filter=anotherweb
+          npx turbo run type-check --filter=anotherweb
 
-      - name: Build anotherWeb application
-        run: npx turbo run build --filter=anotherWeb
+      - name: Build anotherweb application
+        run: npx turbo run build --filter=anotherweb
         env:
           NODE_ENV: production
 
